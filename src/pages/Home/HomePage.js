@@ -1,6 +1,7 @@
 import React, { useEffect,useState } from "react";
 
 import CommentList from "../../components/CommentList/CommentList";
+import styles from "./HomePage.module.css";
 
 const HomePage = ({ comment, isLoading, isError, fetchCommentsToApp }) => {
   useEffect(() => {
@@ -23,20 +24,19 @@ const HomePage = ({ comment, isLoading, isError, fetchCommentsToApp }) => {
 
   return (
     <>
-      <div >
-        <div>
-          <h4>Search</h4>
-          <button  onClick={clearInput}> Clear </button>
-        </div>
-        <div>
-          <input
-              id="name"
-              type="text"
-              placeholder="search..."
-              value={email}
-              onChange={e => searchEmail(e.target.value)}
-          />
-        </div>
+      <div className={styles.Search}>
+          <h3>Search email</h3>
+            <div className="input-group mb-3">
+              <input type="text" className="form-control"
+                     placeholder="Search..."
+                     id="email"
+                     value={email}
+                     onChange={e => searchEmail(e.target.value)}/>
+                <div className="input-group-append">
+                  <button className="btn btn-outline-secondary" type="button" onClick={clearInput}>Clear</button>
+                </div>
+            </div>
+
       </div>
       <CommentList comment={comment} email={email}/>
     </>
