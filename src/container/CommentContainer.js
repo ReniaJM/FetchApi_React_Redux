@@ -1,9 +1,9 @@
-import { connect } from "react-redux";
+import {connect} from "react-redux";
 
 import Comment from "../components/Comment/Comment";
 
 const CommentContainer = connect(
-  null,
+    null,
 )(Comment);
 
 export default CommentContainer;
