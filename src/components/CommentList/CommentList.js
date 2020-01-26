@@ -9,13 +9,7 @@ const CommentList = ({ comment, email }) => {
         comment.email.toLowerCase().includes(textLower)
     );
 
-    // const manufactureLowerText = manufacture;
-    // const allFiltredItems = productsWithFilter.filter(product=>
-    //     product.manufacture.toLowerCase().includes( manufactureLowerText)
-    // );
-
     return(
-
     <div className={styles.Comments}>
         {productsWithFilter.map(e => (
             <CommentContainer key={e.id} {...e} />
