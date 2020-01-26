@@ -4,7 +4,6 @@ import Comment from "../components/Comment/Comment";
 
 const CommentContainer = connect(
   null,
-
 )(Comment);
 
 export default CommentContainer;

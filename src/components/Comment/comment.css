@@ -1,0 +1,21 @@
+.comment {
+  width: 18rem;
+  background-color: rgba(0,0,0,.03);
+  margin: 1rem;
+  text-align: center;
+  flex: 1 0 20rem;
+}
+.name {
+  height: 8rem;
+}
+
+.email {
+ height: 3rem;
+}
+
+.body {
+height: 11rem;
+}
+
+
+

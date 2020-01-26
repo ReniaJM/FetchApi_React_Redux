@@ -1,6 +1,7 @@
 import React from "react";
 import CommentContainer from "../../container/CommentContainer";
-import styles from "./CommentListCatalog.module.css";
+import  "./comments.css";
+import PropTypes from "prop-types";
 
 const CommentList = ({ comment, email }) => {
     const textLower = email.toString().toLowerCase();
@@ -10,7 +11,7 @@ const CommentList = ({ comment, email }) => {
     );
 
     return(
-    <div className={styles.Comments}>
+    <div className="comments">
         {productsWithFilter.map(e => (
             <CommentContainer key={e.id} {...e} />
         ))}
@@ -19,4 +20,11 @@ const CommentList = ({ comment, email }) => {
 
 };
 
+CommentList.propTypes = {
+    comment: PropTypes.array.isRequired,
+    email: PropTypes.string.isRequired,
+};
+
+
 export default CommentList;
+
