@@ -1,0 +1,12 @@
+.Comment {
+  width: 25%;
+  background: grey;
+  margin: 1%;
+  padding:1%;
+  text-align: center;
+  flex: 1 0 23%;
+  border-radius: 10px
+}
+
+
+

@@ -7,7 +7,7 @@ const comment = (state = initState, action) => {
     case ACTION_TYPES.COMMENT_FETCH:
       return { ...initState };
     case ACTION_TYPES.COMMENT_FETCH_SUCCESS:
-      return { comment: action.product, isLoading: false, isError: false };
+      return { comment: action.comment, isLoading: false, isError: false };
     case ACTION_TYPES.COMMENT_FETCH_ERROR:
       return { comment: null, isLoading: false, isError: true };
     default:

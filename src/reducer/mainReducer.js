@@ -3,6 +3,6 @@ import comment from "./comment";
 
 
 export default combineReducers({
-  comment: comment,
+  comments: comment,
 
 });
