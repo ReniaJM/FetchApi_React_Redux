@@ -33,7 +33,7 @@ const HomePage = ({comment, isLoading, isError, fetchCommentsToApp}) => {
                            value={email}
                            onChange={e => searchEmail(e.target.value)}/>
                     <div className="input-group-append">
-                        <button className="btn btn-outline-secondary" type="button" onClick={clearInput}>Clear</button>
+                        <button className="btn btn-dark" type="button" onClick={clearInput}>Clear</button>
                     </div>
                 </div>
 

@@ -1,8 +1,9 @@
 .comment {
-    background-color: rgba(0, 0, 0, .03);
+    background-color: rgba(0, 0, 0, .04);
     margin: 1rem;
     text-align: center;
     flex: 1 0 20rem;
+    border: 0.2rem solid #343a40;
 }
 
 .name {

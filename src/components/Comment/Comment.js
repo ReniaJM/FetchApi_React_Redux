@@ -6,7 +6,7 @@ const Comment = ({id, postId, name, email, body}) => {
     return (
         <>
             <div className="card comment">
-                <div className="card-body">
+                <div className="card-body comment-body">
                     <h4 className="card-title">Name</h4>
                     <p className="name">{name}</p>
                     <h4 className="card-title">Email</h4>

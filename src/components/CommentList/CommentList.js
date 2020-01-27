@@ -19,8 +19,7 @@ const CommentList = ({comment, email}) => {
             ) : (
                 <div>
                     <h2 className="info-results">
-                        <span role="img" aria-label="magnifying glass tilted left">&#128269; </span>
-                        Oops, nothing found</h2>
+                        <span role="img" aria-label="magnifying glass tilted left">&#128269; </span> Oops, nothing found</h2>
                 </div>
             )}
 
