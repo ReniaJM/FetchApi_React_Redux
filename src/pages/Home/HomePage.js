@@ -19,7 +19,7 @@ const HomePage = ({comment, isLoading, isError, fetchCommentsToApp}) => {
     }
 
     if (isLoading) {
-        return <div className="spinner"> Please wait ...</div>
+        return <div className="spinner"/>
     }
 
     return (
