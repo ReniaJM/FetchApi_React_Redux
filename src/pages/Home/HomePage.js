@@ -15,7 +15,7 @@ const HomePage = ({comment, isLoading, isError, fetchCommentsToApp}) => {
     };
 
     if (isError) {
-        return <h2 className="info">Sorry, there's an error during fetching data </h2>;
+        return <h2 className="info-error">Sorry, there's an error during fetching data </h2>;
     }
 
     if (isLoading) {

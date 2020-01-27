@@ -6,19 +6,19 @@ import PropTypes from "prop-types";
 const CommentList = ({comment, email}) => {
     const textLower = email.toString().toLowerCase();
 
-    const productsWithFilter = comment.filter(comment =>
+    const commentWithFilter = comment.filter(comment =>
         comment.email.toLowerCase().includes(textLower)
     );
 
     return (
         <div className="comments">
-            {productsWithFilter.length > 0 ? (
-                productsWithFilter.map(e => {
+            {commentWithFilter.length > 0 ? (
+                commentWithFilter.map(e => {
                     return <CommentContainer key={e.id} {...e} />
                 })
             ) : (
                 <div>
-                    <h2 className="info">No results ... :(</h2>
+                    <h2 className="info-results">No results ... :(</h2>
                 </div>
             )}
 
